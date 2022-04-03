@@ -1,0 +1,21 @@
+#content-main {
+  display: flex;
+  position: relative;
+
+  .content-side {
+    width: 20%;
+    z-index: 3;
+    opacity: 0.8;
+    position: relative;
+    background-color: black;
+  }
+
+  .content-main {
+    flex-grow: 1;
+  }
+
+  .content-main,
+  .content-side {
+    height: 100vh;
+  }
+}

@@ -1,0 +1,47 @@
+#navbar-container {
+  min-height: 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  nav {
+    position: relative;
+    flex-grow: 1;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    a {
+      flex-grow: 1;
+      text-decoration: none;
+      color: black;
+
+      :after {
+        text-decoration: underline;
+        border: 2px solid black;
+      }
+    }
+  }
+}
+
+#nav-ham-icon {
+  display: inline-block;
+  cursor: pointer;
+  margin: 20px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  flex-grow: 0;
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
