@@ -14,7 +14,7 @@ const NeonTitle = ({ className, children }) => {
 
 export const BarLine = styled.div`
   border: 1px solid gray;
-  margin: 0 4rem;
+  margin: 0 1rem;
 `
 
 const NeonLabel = styled(NeonTitle)`
