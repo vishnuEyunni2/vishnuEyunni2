@@ -1,0 +1,36 @@
+.projects {
+  margin: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.link {
+  color: #6e6e7e;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  width: 0;
+  background-color: purple;
+  opacity: 0.8;
+  height: 2px;
+  transform: translateY(-3px);
+}
+
+.link:hover::after {
+  width: 100%;
+  transform: translateY(0);
+  transition: transform 0.8s ease-in-out;
+}
+
+.projects-title {
+  /* width: 32%; */
+}
+.projects-content {
+  /* width: 70%; */
+  margin-right: 200px;
+}

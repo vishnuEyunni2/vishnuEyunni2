@@ -1,0 +1,91 @@
+.intro {
+  display: flex;
+  font-weight: 500;
+  font-size: 2.25rem;
+}
+
+.container:hover {
+  transform: scale(2);
+}
+
+.wave-hand {
+  transition: all 1s;
+}
+
+.wave-hand {
+  border-radius: 5px;
+}
+
+.get-in-touch {
+  display: flex;
+  align-items: center;
+}
+
+.get-in-touch p {
+  flex-basis: 11%;
+}
+
+.color-name {
+  color: purple;
+}
+
+#container {
+  animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+.email {
+  margin-left: 20px;
+  position: relative;
+  cursor: pointer;
+  width: 300px;
+  color: #444;
+  transition: all 1.2s ease-out;
+}
+
+.email::after {
+  content: '';
+  position: absolute;
+  color: purple;
+  border: 2px solid purple;
+  display: inline-block;
+  margin: 0 10px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(0);
+  transition: all 0.8s ease-out;
+}
+
+.email:hover {
+  color: purple;
+  transition: all 1s ease-in-out;
+}
+
+.email:hover::after {
+  transform: translateX(-310px);
+  transition: all 0.8s ease-in-out;
+}
