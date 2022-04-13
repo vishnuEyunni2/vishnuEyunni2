@@ -13,6 +13,24 @@
   }
 }
 
+.nightmode {
+  background-color: #0b0d24;
+}
+
+.lightmode {
+  background-color: whitesmoke;
+}
+
+.nightmode,
+.lightmode {
+  background-image: radial-gradient(#484444 1px, transparent 1px);
+  background-size: 50px 50px;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
 .appheader {
   padding: 120px 100px;
   height: 100vh;
@@ -33,7 +51,6 @@ h3 {
   font-weight: 200;
 }
 
-
 .App-link {
   color: #61dafb;
 }
@@ -45,4 +62,12 @@ h3 {
   to {
     transform: rotate(360deg);
   }
+}
+
+#navbar {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }

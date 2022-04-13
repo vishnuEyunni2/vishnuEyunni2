@@ -34,7 +34,8 @@
 }
 
 @keyframes wiggle {
-  0%, 7% {
+  0%,
+  7% {
     transform: rotateZ(0);
   }
   15% {
@@ -52,7 +53,8 @@
   35% {
     transform: rotateZ(-4deg);
   }
-  40%, 100% {
+  40%,
+  100% {
     transform: rotateZ(0);
   }
 }
@@ -67,7 +69,7 @@
 }
 
 .email::after {
-  content: '';
+  content: "";
   position: absolute;
   color: purple;
   border: 2px solid purple;

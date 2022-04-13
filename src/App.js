@@ -2,15 +2,33 @@ import Header from './components/Header';
 import './App.css';
 import Background from './components/Background';
 import Projects from './components/Projects';
+import ToggleDarkMode from './components/ToggleDarkMode';
+import { useContext } from 'react';
+import { Themectx } from './components/ThemeContext/ThemeContext';
 
 function App() {
+
   return (
-    <div>
+    <>
+      <ThemeDiv />
+      <nav id="navbar">
+        <ToggleDarkMode />
+      </nav>
       <Header />
       <Background />
       <Projects />
-    </div>
+    </>
   );
+}
+
+const ThemeDiv = () => {
+
+  const { dark } = useContext(Themectx);
+
+  return (
+    <div className={dark ? 'nightmode' : 'lightmode'}>
+    </div>
+  )
 }
 
 export default App;
