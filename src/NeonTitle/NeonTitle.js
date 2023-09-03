@@ -7,7 +7,6 @@ const NeonTitle = ({ className, children }) => {
   return (
     <div >
       <h2 className={className}>{children}</h2>
-      <br />
     </div>
   )
 }

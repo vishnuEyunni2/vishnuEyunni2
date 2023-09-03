@@ -1,2 +1,8 @@
-@import "./main.scss";
-@import "./src//Navbar/navbar.scss";
+@import './main.scss';
+@import './src//Navbar/navbar.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}

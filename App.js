@@ -10,7 +10,7 @@ function App() {
   return (
     <ErrorBoundary>
       <BaseLayout enableBgr={true} bgrUrl='../../Public/assets/grungepattern.jpg'>
-        <ContentLayout/>
+        <ContentLayout />
       </BaseLayout>
     </ErrorBoundary>
   )

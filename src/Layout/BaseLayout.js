@@ -6,13 +6,7 @@ const BaseLayout = (props) => {
   const { enableBgr } = props;
 
   return (
-    <div className='base-wrap'>
-      {
-        enableBgr
-        &&
-        <div className='base-section-1' >
-        </div>
-      }
+    <div className={`base-wrap ${enableBgr ? 'bgr' : ''}`}>
       <div className='base-section-2'>
         {props.children}
       </div>

@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/vishnuEyunni2/vishnuEyunni2.github.io/issues"
   },
-  "homepage": "https://github.com/vishnuEyunni2/vishnuEyunni2.github.io#readme",
+  "homepage": "https://vishnuEyunni2.github.io/main",
   "dependencies": {
     "babel-loader": "^8.2.4",
     "react": "^17.0.2",
